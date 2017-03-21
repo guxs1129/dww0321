@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="KGk-i7-Jjw" customClass="AddRecruitmentSkillTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掌握技能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wl2-2a-All">
+                        <rect key="frame" x="20" y="0.0" width="57.5" height="42.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写技能" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMY-yG-KYv">
+                        <rect key="frame" x="106" y="0.0" width="80" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="20z-aR-5Qe"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhF-vL-ppi">
+                        <rect key="frame" x="191" y="0.0" width="5" height="42.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwK-Zv-hfZ">
+                        <rect key="frame" x="201" y="0.0" width="93" height="42.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="请选择熟练程度">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.57369608274647887" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickSubValueButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Sj-Ux-IYF"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="positionSubscriber_arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="qza-DC-9Ku">
+                        <rect key="frame" x="302" y="0.0" width="8" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="rJd-Hj-cBB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EwK-Zv-hfZ" secondAttribute="bottom" id="7bh-pk-bqZ"/>
+                    <constraint firstItem="dMY-yG-KYv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CYC-Qc-24o"/>
+                    <constraint firstAttribute="trailing" secondItem="qza-DC-9Ku" secondAttribute="trailing" constant="10" id="EZH-Q1-pum"/>
+                    <constraint firstAttribute="bottom" secondItem="IhF-vL-ppi" secondAttribute="bottom" id="N9C-PA-LQz"/>
+                    <constraint firstAttribute="bottom" secondItem="Wl2-2a-All" secondAttribute="bottom" id="NLf-x9-z2R"/>
+                    <constraint firstItem="IhF-vL-ppi" firstAttribute="leading" secondItem="dMY-yG-KYv" secondAttribute="trailing" constant="5" id="OrQ-OG-vaz"/>
+                    <constraint firstItem="EwK-Zv-hfZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PDg-lz-M6C"/>
+                    <constraint firstAttribute="bottom" secondItem="qza-DC-9Ku" secondAttribute="bottom" id="QcG-I8-kHC"/>
+                    <constraint firstItem="EwK-Zv-hfZ" firstAttribute="leading" secondItem="IhF-vL-ppi" secondAttribute="trailing" constant="5" id="TKl-12-zyK"/>
+                    <constraint firstItem="dMY-yG-KYv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wl2-2a-All" secondAttribute="trailing" constant="8" id="U74-3B-n6G"/>
+                    <constraint firstItem="IhF-vL-ppi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="W7p-Kp-fWr"/>
+                    <constraint firstAttribute="bottom" secondItem="dMY-yG-KYv" secondAttribute="bottom" id="aX8-10-tOE"/>
+                    <constraint firstItem="qza-DC-9Ku" firstAttribute="leading" secondItem="EwK-Zv-hfZ" secondAttribute="trailing" constant="8" id="d1A-H7-vB6"/>
+                    <constraint firstItem="Wl2-2a-All" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="e7E-p9-rcu"/>
+                    <constraint firstItem="qza-DC-9Ku" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eAS-zD-o18"/>
+                    <constraint firstItem="Wl2-2a-All" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ldr-1f-khc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subValueButton" destination="EwK-Zv-hfZ" id="Ukq-cs-0fm"/>
+                <outlet property="titleLabel" destination="Wl2-2a-All" id="vce-1v-AP6"/>
+                <outlet property="valueTextField" destination="dMY-yG-KYv" id="Kx4-AG-tN2"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="52.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="positionSubscriber_arrowRight" width="6" height="9"/>
+    </resources>
+</document>

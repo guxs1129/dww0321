@@ -1,0 +1,89 @@
+    //
+    //  PrefixHeader.pch
+
+    //
+
+    //
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define kScreenW [[UIScreen mainScreen] bounds].size.width
+
+#define kScreenH [[UIScreen mainScreen] bounds].size.height
+    // Include any system framework and library headers here that should be included in all compilation units.
+    // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#ifdef __OBJC__
+    // 第三方框架包导入
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+    //#import <SVProgressHUD/SVProgressHUD.h>
+#import <Masonry/Masonry.h>
+
+
+/*
+ XCode LLVM XXX - Preprocessing中Debug会添加 DEBUG=1 标志
+ */
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+#endif
+
+    // 扩展类
+#import "NSDictionary+Additions.h"
+#import "NSString+Additions.h"
+#import "UIColor+expanded.h"
+#import "UITableView+Common.h"
+#import "UIButton+Common.h"
+#import "UIBarButtonItem+Common.h"
+#import "UIView+Common.h"
+#import "UIImage+Common.h"
+#import "UILabel+Common.h"
+#import "IdentifierForReusable.h"
+
+    //-------------------------
+    //for Crowdfunding Module
+    //@gu.xinsheng
+    //2017.03.12
+#import "UIColor+Extension.h"
+#import "UIImage+Color.h"
+#import "UIImage+HR.h"
+#import "UIImage+Thumb.h"
+#import "UIView+Image.h"
+#import "Masonry.h"
+    //-------------------------
+
+    // 布局组件
+#import "SDAutoLayout.h"
+
+#import <UIImageView+WebCache.h>
+
+    // tabBarController
+#import "DWTabBarControllerConfig.h"
+
+    // navigationController
+#import "RTRootNavigationController.h"
+#import "DWNavigationControllerConfig.h"
+
+#import "MJRefresh.h"
+#import "SWAlertView.h"
+#import "MBProgressHUD+MP.h"
+#import "Tool.h"
+#import "DWUserDataManager.h"
+#import "HaoConnect.h"
+
+    // 宏定义
+#import "Global.h"
+#import "Config.h"
+#import "JiaMacros.h"
+
+    // 全局枚举定义
+#import "GlobalEnum.h"
+
+
+

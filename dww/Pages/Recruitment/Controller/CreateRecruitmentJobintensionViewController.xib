@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateRecruitmentJobintensionViewController">
+            <connections>
+                <outlet property="footerView" destination="96M-fe-csC" id="b25-ar-jwS"/>
+                <outlet property="tableView" destination="bHf-U4-WEH" id="ZmQ-0N-V7z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bHf-U4-WEH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bHf-U4-WEH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5cn-bN-8O7"/>
+                <constraint firstAttribute="trailing" secondItem="bHf-U4-WEH" secondAttribute="trailing" id="aff-ph-cjd"/>
+                <constraint firstItem="bHf-U4-WEH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fgt-UI-HpK"/>
+                <constraint firstAttribute="bottom" secondItem="bHf-U4-WEH" secondAttribute="bottom" id="if3-fh-C9T"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="96M-fe-csC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcy-Zc-yZd">
+                    <rect key="frame" x="20" y="38" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.63137254899999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="zFT-H9-37c"/>
+                    </constraints>
+                    <state key="normal" title="下一步, 隐私设置">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickFooterViewButtonAction:" destination="-1" eventType="touchUpInside" id="mwk-48-34u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kcy-Zc-yZd" secondAttribute="trailing" constant="20" id="A1T-2q-BIe"/>
+                <constraint firstItem="kcy-Zc-yZd" firstAttribute="centerY" secondItem="96M-fe-csC" secondAttribute="centerY" id="mud-nX-QF8"/>
+                <constraint firstItem="kcy-Zc-yZd" firstAttribute="leading" secondItem="96M-fe-csC" secondAttribute="leading" constant="20" id="qeZ-MD-4Bf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="501"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseJobPositionViewController">
+            <connections>
+                <outlet property="headerArrowImageView" destination="C26-dQ-Kz0" id="VQG-Kt-jtu"/>
+                <outlet property="headerView" destination="BCr-Db-mMz" id="J4T-pk-Vtd"/>
+                <outlet property="selectedCountLabel" destination="lHc-YK-gkM" id="QoX-yx-d3z"/>
+                <outlet property="selectedJobPositionBackgroundView" destination="PCz-4D-yf9" id="MDX-Uy-s8L"/>
+                <outlet property="tableView" destination="0D1-uS-gGH" id="9yL-jC-Rff"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-uS-gGH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0D1-uS-gGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OaI-fE-idA"/>
+                <constraint firstItem="0D1-uS-gGH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ObZ-lV-cdA"/>
+                <constraint firstAttribute="trailing" secondItem="0D1-uS-gGH" secondAttribute="trailing" id="hI2-xR-pgG"/>
+                <constraint firstAttribute="bottom" secondItem="0D1-uS-gGH" secondAttribute="bottom" id="ubh-Fo-ZHs"/>
+            </constraints>
+        </view>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="BCr-Db-mMz">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCA-A9-KJl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选职能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-He-nRE">
+                            <rect key="frame" x="20" y="0.0" width="57.5" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-YK-gkM">
+                            <rect key="frame" x="315.5" y="0.0" width="19.5" height="38"/>
+                            <attributedString key="attributedText">
+                                <fragment content="0">
+                                    <attributes>
+                                        <color key="NSColor" red="0.96470588235294119" green="0.27058823529411763" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="cellTitle"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="/3">
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="cellTitle"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chooseJob_arrowdown" highlightedImage="chooseJob_arrowup" translatesAutoresizingMaskIntoConstraints="NO" id="C26-dQ-Kz0">
+                            <rect key="frame" x="340" y="0.0" width="15" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="4rd-Cy-yTq"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKq-Nm-lbb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                            <connections>
+                                <action selector="clickHeaderViewAction:" destination="-1" eventType="touchUpInside" id="mAs-IV-m9i"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="lHc-YK-gkM" firstAttribute="top" secondItem="XCA-A9-KJl" secondAttribute="top" id="1ei-cg-DOx"/>
+                        <constraint firstItem="lHc-YK-gkM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BFA-He-nRE" secondAttribute="trailing" constant="10" id="2E9-zO-Ipa"/>
+                        <constraint firstAttribute="bottom" secondItem="DKq-Nm-lbb" secondAttribute="bottom" id="4Gt-G3-B69"/>
+                        <constraint firstAttribute="bottom" secondItem="BFA-He-nRE" secondAttribute="bottom" id="7Zj-pZ-K4s"/>
+                        <constraint firstAttribute="bottom" secondItem="C26-dQ-Kz0" secondAttribute="bottom" id="FNe-eQ-x8h"/>
+                        <constraint firstAttribute="bottom" secondItem="lHc-YK-gkM" secondAttribute="bottom" id="H0w-Kv-7ud"/>
+                        <constraint firstAttribute="height" constant="38" id="HfQ-GU-U9R"/>
+                        <constraint firstItem="BFA-He-nRE" firstAttribute="leading" secondItem="XCA-A9-KJl" secondAttribute="leading" constant="20" id="J56-pu-OJ1"/>
+                        <constraint firstAttribute="trailing" secondItem="C26-dQ-Kz0" secondAttribute="trailing" constant="20" id="JFs-cX-4z8"/>
+                        <constraint firstItem="BFA-He-nRE" firstAttribute="top" secondItem="XCA-A9-KJl" secondAttribute="top" id="Ra0-n6-M2q"/>
+                        <constraint firstItem="DKq-Nm-lbb" firstAttribute="leading" secondItem="XCA-A9-KJl" secondAttribute="leading" id="TIm-jj-Qmk"/>
+                        <constraint firstAttribute="trailing" secondItem="DKq-Nm-lbb" secondAttribute="trailing" id="Zmv-d5-usH"/>
+                        <constraint firstItem="DKq-Nm-lbb" firstAttribute="top" secondItem="XCA-A9-KJl" secondAttribute="top" id="eGV-Sj-Gkm"/>
+                        <constraint firstItem="C26-dQ-Kz0" firstAttribute="top" secondItem="XCA-A9-KJl" secondAttribute="top" id="fvk-Nm-T0z"/>
+                        <constraint firstItem="C26-dQ-Kz0" firstAttribute="leading" secondItem="lHc-YK-gkM" secondAttribute="trailing" constant="5" id="xHW-aN-eSd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCz-4D-yf9">
+                    <rect key="frame" x="0.0" y="38" width="375" height="45.5"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7H7-UW-tUl">
+                    <rect key="frame" x="0.0" y="83.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="GR6-ch-laq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XCA-A9-KJl" firstAttribute="leading" secondItem="BCr-Db-mMz" secondAttribute="leading" id="1ox-Y1-Lzi"/>
+                <constraint firstItem="XCA-A9-KJl" firstAttribute="top" secondItem="BCr-Db-mMz" secondAttribute="top" id="5q9-3M-5h1"/>
+                <constraint firstAttribute="trailing" secondItem="PCz-4D-yf9" secondAttribute="trailing" id="BHq-ir-EG0"/>
+                <constraint firstAttribute="bottom" secondItem="7H7-UW-tUl" secondAttribute="bottom" id="DTX-BF-y6L"/>
+                <constraint firstAttribute="trailing" secondItem="7H7-UW-tUl" secondAttribute="trailing" id="XWF-k8-BJ0"/>
+                <constraint firstItem="7H7-UW-tUl" firstAttribute="leading" secondItem="BCr-Db-mMz" secondAttribute="leading" id="dq9-Uy-apu"/>
+                <constraint firstItem="PCz-4D-yf9" firstAttribute="top" secondItem="XCA-A9-KJl" secondAttribute="bottom" id="ePo-Aq-Eqb"/>
+                <constraint firstItem="PCz-4D-yf9" firstAttribute="leading" secondItem="BCr-Db-mMz" secondAttribute="leading" id="f54-xH-TiD"/>
+                <constraint firstAttribute="trailing" secondItem="XCA-A9-KJl" secondAttribute="trailing" id="qRq-hq-4DE"/>
+                <constraint firstItem="7H7-UW-tUl" firstAttribute="top" secondItem="PCz-4D-yf9" secondAttribute="bottom" id="wDa-F6-LhG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="54.5" y="-404"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chooseJob_arrowdown" width="15" height="15"/>
+        <image name="chooseJob_arrowup" width="15" height="15"/>
+    </resources>
+</document>

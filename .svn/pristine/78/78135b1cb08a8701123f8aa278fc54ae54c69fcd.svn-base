@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendRecruitmentSuccessViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1k-i4-N8V">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投递成功 !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl3-qZ-3Tb">
+                            <rect key="frame" x="20" y="40" width="335" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.99215686270000003" green="0.63137254899999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以在 &quot;我的 - 我投递的职位&quot; 中查看应聘记录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDH-Td-HsA">
+                            <rect key="frame" x="20" y="66" width="335" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zDH-Td-HsA" firstAttribute="top" secondItem="cl3-qZ-3Tb" secondAttribute="bottom" constant="8" id="Ozx-1q-GbF"/>
+                        <constraint firstItem="zDH-Td-HsA" firstAttribute="leading" secondItem="t1k-i4-N8V" secondAttribute="leading" constant="20" id="XxU-a5-4Ab"/>
+                        <constraint firstAttribute="bottom" secondItem="zDH-Td-HsA" secondAttribute="bottom" constant="35" id="Yly-0o-rlT"/>
+                        <constraint firstItem="cl3-qZ-3Tb" firstAttribute="leading" secondItem="t1k-i4-N8V" secondAttribute="leading" constant="20" id="iIp-Wd-kmg"/>
+                        <constraint firstItem="cl3-qZ-3Tb" firstAttribute="top" secondItem="t1k-i4-N8V" secondAttribute="top" constant="40" id="jKL-Db-OxH"/>
+                        <constraint firstAttribute="trailing" secondItem="cl3-qZ-3Tb" secondAttribute="trailing" constant="20" id="qoc-3f-y8p"/>
+                        <constraint firstAttribute="trailing" secondItem="zDH-Td-HsA" secondAttribute="trailing" constant="20" id="r8i-mI-7VN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="t1k-i4-N8V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jzx-CP-E5W"/>
+                <constraint firstAttribute="trailing" secondItem="t1k-i4-N8V" secondAttribute="trailing" id="jqJ-D2-E13"/>
+                <constraint firstItem="t1k-i4-N8V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lz3-dl-DsS"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="56.5"/>
+        </view>
+    </objects>
+</document>

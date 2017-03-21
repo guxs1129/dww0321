@@ -1,0 +1,10 @@
+//
+//  Generator.xcconfig
+//  dww
+//
+//  Created by Shadow.G on 16/12/20.
+//  Copyright © 2016年 haoxitech. All rights reserved.
+//
+
+//*其作用是将配置文件中定义的常量定义成预编译宏，以便于在代码中获取。*
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) APP_DISPLAY_NAME='$(APP_DISPLAY_NAME)' APP_MODE='$(APP_MODE)' APP_BUNDLE_IDENTIFIER='$(APP_BUNDLE_IDENTIFIER)'

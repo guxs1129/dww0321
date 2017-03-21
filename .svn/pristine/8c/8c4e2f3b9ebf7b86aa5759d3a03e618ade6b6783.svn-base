@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="W9v-ni-KrJ" customClass="EditRecruitmentExtraInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W9v-ni-KrJ" id="fkh-Se-Oq7">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zre-bL-Rzh">
+                        <rect key="frame" x="20" y="15" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89L-xv-wiE">
+                        <rect key="frame" x="20" y="23" width="280" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-Kw-vxo">
+                        <rect key="frame" x="20" y="56" width="280" height="51.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zrl-jt-Q5S">
+                        <rect key="frame" x="0.0" y="115" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="BHw-7u-alc"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPe-4Z-ddm">
+                        <rect key="frame" x="300" y="15" width="0.0" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="545-lt-nJt"/>
+                            <constraint firstAttribute="height" constant="22" id="fmp-P8-4Rv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title=" 编辑" image="recruitment_edit">
+                            <color key="titleColor" red="0.99215686270000003" green="0.63137254899999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickEditButtonAction:" destination="W9v-ni-KrJ" eventType="touchUpInside" id="Uz2-i7-88N"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自我描述 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-oU-V1x">
+                        <rect key="frame" x="20" y="31" width="280" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vah-oU-V1x" firstAttribute="top" secondItem="89L-xv-wiE" secondAttribute="bottom" constant="8" id="3ku-R9-ZgC"/>
+                    <constraint firstItem="Zre-bL-Rzh" firstAttribute="top" secondItem="fkh-Se-Oq7" secondAttribute="top" constant="15" id="4mp-ME-Syl"/>
+                    <constraint firstAttribute="trailing" secondItem="Vah-oU-V1x" secondAttribute="trailing" constant="20" id="6B3-sb-Jcd"/>
+                    <constraint firstItem="LPe-4Z-ddm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zre-bL-Rzh" secondAttribute="trailing" constant="8" id="8w3-Us-I0l"/>
+                    <constraint firstItem="LPe-4Z-ddm" firstAttribute="top" secondItem="fkh-Se-Oq7" secondAttribute="top" constant="15" id="9hJ-op-b8a"/>
+                    <constraint firstAttribute="bottom" secondItem="dcB-Kw-vxo" secondAttribute="bottom" constant="8" id="Acy-OR-Drw"/>
+                    <constraint firstAttribute="trailing" secondItem="Zrl-jt-Q5S" secondAttribute="trailing" id="CAO-11-jIC"/>
+                    <constraint firstAttribute="trailing" secondItem="89L-xv-wiE" secondAttribute="trailing" constant="20" id="KYr-bz-woS"/>
+                    <constraint firstAttribute="trailing" secondItem="LPe-4Z-ddm" secondAttribute="trailing" constant="20" id="OIu-gX-B17"/>
+                    <constraint firstItem="Zre-bL-Rzh" firstAttribute="leading" secondItem="fkh-Se-Oq7" secondAttribute="leading" constant="20" id="OsX-PR-0tL"/>
+                    <constraint firstItem="89L-xv-wiE" firstAttribute="leading" secondItem="fkh-Se-Oq7" secondAttribute="leading" constant="20" id="XXU-0Q-Eq7"/>
+                    <constraint firstAttribute="trailing" secondItem="dcB-Kw-vxo" secondAttribute="trailing" constant="20" id="YUl-xh-pkW"/>
+                    <constraint firstAttribute="bottom" secondItem="Zrl-jt-Q5S" secondAttribute="bottom" id="Yo2-K8-ULc"/>
+                    <constraint firstItem="89L-xv-wiE" firstAttribute="top" secondItem="Zre-bL-Rzh" secondAttribute="bottom" constant="8" id="boe-4b-bxT"/>
+                    <constraint firstItem="dcB-Kw-vxo" firstAttribute="leading" secondItem="fkh-Se-Oq7" secondAttribute="leading" constant="20" id="gHg-EG-o8d"/>
+                    <constraint firstItem="Zrl-jt-Q5S" firstAttribute="leading" secondItem="fkh-Se-Oq7" secondAttribute="leading" id="hPv-fM-4f9"/>
+                    <constraint firstItem="dcB-Kw-vxo" firstAttribute="top" secondItem="Vah-oU-V1x" secondAttribute="bottom" constant="8" id="n7n-9l-GCk"/>
+                    <constraint firstItem="Vah-oU-V1x" firstAttribute="leading" secondItem="fkh-Se-Oq7" secondAttribute="leading" constant="20" id="z2n-45-tba"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="languageLevelLabel" destination="Zre-bL-Rzh" id="34V-HK-NRf"/>
+                <outlet property="selfDescriptionLabel" destination="dcB-Kw-vxo" id="D22-zF-mvb"/>
+                <outlet property="skillLevelLabel" destination="89L-xv-wiE" id="o8B-GT-Qfm"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="39"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="recruitment_edit" width="15" height="14"/>
+    </resources>
+</document>

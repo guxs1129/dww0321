@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddSkillLevelViewController">
+            <connections>
+                <outlet property="footerView" destination="PeK-r9-0q9" id="Wm5-Q0-c2C"/>
+                <outlet property="tableView" destination="t54-Is-ZWO" id="30N-Jp-imF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t54-Is-ZWO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t54-Is-ZWO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="39d-u2-UYI"/>
+                <constraint firstAttribute="bottom" secondItem="t54-Is-ZWO" secondAttribute="bottom" id="DgT-UR-s9X"/>
+                <constraint firstAttribute="trailing" secondItem="t54-Is-ZWO" secondAttribute="trailing" id="ucc-qu-hvN"/>
+                <constraint firstItem="t54-Is-ZWO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wYM-kK-SsI"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="PeK-r9-0q9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naC-y3-3Ck">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="+ 添加技能">
+                        <color key="titleColor" red="0.38823529410000002" green="0.1764705882" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickFooterViewAction:" destination="-1" eventType="touchUpInside" id="P9x-xz-nCH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="naC-y3-3Ck" secondAttribute="bottom" id="ZMH-eR-CmV"/>
+                <constraint firstAttribute="trailing" secondItem="naC-y3-3Ck" secondAttribute="trailing" id="b45-8Y-Ldu"/>
+                <constraint firstItem="naC-y3-3Ck" firstAttribute="leading" secondItem="PeK-r9-0q9" secondAttribute="leading" id="lU5-92-IvL"/>
+                <constraint firstItem="naC-y3-3Ck" firstAttribute="top" secondItem="PeK-r9-0q9" secondAttribute="top" id="s1p-3o-82P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="18.5" y="-357"/>
+        </view>
+    </objects>
+</document>

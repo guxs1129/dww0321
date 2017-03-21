@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PrivateSettingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请添加企业名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p0r-13-NXt">
+                        <rect key="frame" x="20" y="0.0" width="240" height="43.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-49-m2D">
+                        <rect key="frame" x="280" y="0.0" width="20" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="7gp-uY-J7g"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" red="0.99215686270000003" green="0.63137254899999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickRightButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="reV-R7-IHe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zqX-49-m2D" secondAttribute="trailing" constant="20" id="MJo-Gn-a3D"/>
+                    <constraint firstItem="p0r-13-NXt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MPQ-cr-fAL"/>
+                    <constraint firstItem="p0r-13-NXt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="R4F-ey-d8w"/>
+                    <constraint firstAttribute="bottom" secondItem="p0r-13-NXt" secondAttribute="bottom" id="Yho-nH-aJx"/>
+                    <constraint firstAttribute="bottom" secondItem="zqX-49-m2D" secondAttribute="bottom" id="bOX-cx-gzv"/>
+                    <constraint firstItem="zqX-49-m2D" firstAttribute="leading" secondItem="p0r-13-NXt" secondAttribute="trailing" constant="20" id="d8c-P3-2IQ"/>
+                    <constraint firstItem="zqX-49-m2D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zCV-SU-Tva"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rightButton" destination="zqX-49-m2D" id="Gom-P7-3Ly"/>
+                <outlet property="titleTextField" destination="p0r-13-NXt" id="SxU-iE-vbV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

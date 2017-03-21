@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateRecruitmentEducationInfoViewController">
+            <connections>
+                <outlet property="footerView" destination="NLg-zV-eJr" id="SDF-K6-ICH"/>
+                <outlet property="headerView" destination="odA-8q-hJX" id="vST-fG-nQh"/>
+                <outlet property="tableView" destination="wBp-4C-8S9" id="htE-jp-FUZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wBp-4C-8S9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wBp-4C-8S9" secondAttribute="bottom" id="B5b-bR-3eL"/>
+                <constraint firstAttribute="trailing" secondItem="wBp-4C-8S9" secondAttribute="trailing" id="GSg-Ni-RgT"/>
+                <constraint firstItem="wBp-4C-8S9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wd4-8g-3vT"/>
+                <constraint firstItem="wBp-4C-8S9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iMU-aB-dOQ"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="odA-8q-hJX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写最高学历, 其他学历可后续完善" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeZ-kc-VfB">
+                    <rect key="frame" x="20" y="0.0" width="335" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jx-oz-Q1v">
+                    <rect key="frame" x="0.0" y="37" width="375" height="0.0"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="iMW-mr-AD9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6jx-oz-Q1v" secondAttribute="bottom" id="19N-hN-vNc"/>
+                <constraint firstAttribute="bottom" secondItem="KeZ-kc-VfB" secondAttribute="bottom" id="6jf-jY-sDY"/>
+                <constraint firstItem="KeZ-kc-VfB" firstAttribute="top" secondItem="odA-8q-hJX" secondAttribute="top" id="LjG-aB-ybn"/>
+                <constraint firstItem="6jx-oz-Q1v" firstAttribute="leading" secondItem="odA-8q-hJX" secondAttribute="leading" id="OkW-8P-LLQ"/>
+                <constraint firstAttribute="trailing" secondItem="6jx-oz-Q1v" secondAttribute="trailing" id="PBK-d7-YBL"/>
+                <constraint firstItem="KeZ-kc-VfB" firstAttribute="leading" secondItem="odA-8q-hJX" secondAttribute="leading" constant="20" id="QcH-3i-Wya"/>
+                <constraint firstAttribute="trailing" secondItem="KeZ-kc-VfB" secondAttribute="trailing" constant="20" id="sJt-ao-xps"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="27" y="-372"/>
+        </view>
+        <view contentMode="scaleToFill" id="NLg-zV-eJr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcP-rk-J01">
+                    <rect key="frame" x="20" y="38" width="335" height="45"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.63137254899999995" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="6p5-JE-BNx"/>
+                    </constraints>
+                    <state key="normal" title="下一步, 完善工作经历">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickFooterViewButtonAction:" destination="-1" eventType="touchUpInside" id="mPw-UZ-WfP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LcP-rk-J01" secondAttribute="trailing" constant="20" id="MRo-3N-0FQ"/>
+                <constraint firstItem="LcP-rk-J01" firstAttribute="leading" secondItem="NLg-zV-eJr" secondAttribute="leading" constant="20" id="Rb5-rZ-s07"/>
+                <constraint firstItem="LcP-rk-J01" firstAttribute="centerY" secondItem="NLg-zV-eJr" secondAttribute="centerY" id="gaf-gc-QSL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="501"/>
+        </view>
+    </objects>
+</document>

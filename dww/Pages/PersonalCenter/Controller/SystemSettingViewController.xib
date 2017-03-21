@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SystemSettingViewController">
+            <connections>
+                <outlet property="footerView" destination="WXK-7p-8GS" id="a6M-uv-QzF"/>
+                <outlet property="tableView" destination="f7T-GH-ePr" id="Pth-lF-XDx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f7T-GH-ePr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f7T-GH-ePr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Dc-aM-Pdl"/>
+                <constraint firstAttribute="trailing" secondItem="f7T-GH-ePr" secondAttribute="trailing" id="KdX-0Y-sPN"/>
+                <constraint firstItem="f7T-GH-ePr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NQ7-rJ-tX0"/>
+                <constraint firstAttribute="bottom" secondItem="f7T-GH-ePr" secondAttribute="bottom" id="goZ-Q3-gRH"/>
+            </constraints>
+            <point key="canvasLocation" x="-184" y="-23"/>
+        </view>
+        <view contentMode="scaleToFill" id="WXK-7p-8GS">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7D-0t-4bs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="退出账号">
+                        <color key="titleColor" red="0.96470588235294119" green="0.27058823529411763" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickExitLoginAction:" destination="-1" eventType="touchUpInside" id="NmX-9y-6ZB"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efo-7Z-B7z">
+                    <rect key="frame" x="0.0" y="47.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="iNK-d8-rDN"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-8K-JdY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="rtH-Yr-1YX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="efo-7Z-B7z" secondAttribute="trailing" id="0Wr-Yx-JG7"/>
+                <constraint firstAttribute="trailing" secondItem="UYI-8K-JdY" secondAttribute="trailing" id="1VN-gU-fNd"/>
+                <constraint firstItem="UYI-8K-JdY" firstAttribute="leading" secondItem="WXK-7p-8GS" secondAttribute="leading" id="8kQ-Lg-iK5"/>
+                <constraint firstItem="G7D-0t-4bs" firstAttribute="leading" secondItem="WXK-7p-8GS" secondAttribute="leading" id="W8L-wr-wOY"/>
+                <constraint firstAttribute="bottom" secondItem="efo-7Z-B7z" secondAttribute="bottom" id="crP-dX-tmx"/>
+                <constraint firstAttribute="bottom" secondItem="G7D-0t-4bs" secondAttribute="bottom" id="dQY-Hu-Es9"/>
+                <constraint firstItem="UYI-8K-JdY" firstAttribute="top" secondItem="WXK-7p-8GS" secondAttribute="top" id="ufE-ub-Mdy"/>
+                <constraint firstAttribute="trailing" secondItem="G7D-0t-4bs" secondAttribute="trailing" id="wYl-JH-amf"/>
+                <constraint firstItem="G7D-0t-4bs" firstAttribute="top" secondItem="WXK-7p-8GS" secondAttribute="top" id="zf9-wV-gWJ"/>
+                <constraint firstItem="efo-7Z-B7z" firstAttribute="leading" secondItem="WXK-7p-8GS" secondAttribute="leading" id="zwV-4U-n3n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-81.5" y="-448"/>
+        </view>
+    </objects>
+</document>

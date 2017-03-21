@@ -1,0 +1,29 @@
+//
+//  ReleaseConfig.xcconfig
+//  dww
+//
+//  Created by Shadow.G on 16/12/19.
+//  Copyright © 2016年 haoxitech. All rights reserved.
+//
+
+// 导入公共 config
+
+#include "CommonConfig.xcconfig"
+
+// 导入pods 对应的 config
+
+#include "Pods/Target Support Files/Pods-dww/Pods-dww.release.xcconfig"
+
+//**************** 应用层配置 ****************//
+
+
+// Bundle display name
+APP_DISPLAY_NAME = 大文网
+
+// MODE - 模式，可用于预编译宏
+APP_MODE = release
+
+// Bundle identifier - APP唯一标示
+PRODUCT_BUNDLE_IDENTIFIER = com.haoxitech.dww
+
+#include "Generator.xcconfig"
