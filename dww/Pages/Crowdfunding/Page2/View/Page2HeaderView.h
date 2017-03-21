@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HXAdvantismentView.h"
 
 @interface Page2HeaderView : UIView
+@property (nonatomic,strong) HXAdvantismentView * advanceView;
 
 @end
